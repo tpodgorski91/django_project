@@ -1,10 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
+from cloudinary.models import CloudinaryField
+# every time we change model -> makemigrations and migrate is necessery
+#  go to admin in order to register your model!
 
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    # upload to dir where are stored images
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
 
     def __str__(self):
@@ -14,6 +18,7 @@ class Profile(models.Model):
         super().save(*args, **kwargs)
 
         img = Image.open(self.image.path)
+        # img = CloudinaryField('image')
 
         if img.height > 300 or img.width > 300:
             output_size = (300, 300)
