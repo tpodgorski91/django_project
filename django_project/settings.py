@@ -13,10 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import django_heroku
 import os
 from pathlib import Path
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-# comment
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,8 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tyvh@sglax_z2x0j+#04)pqcho_^j^@rjje*@f&7kd#)s_l^v^'
-# SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = 'tyvh@sglax_z2x0j+#04)pqcho_^j^@rjje*@f&7kd#)s_l^v^'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -48,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
-    'cloudinary'
+
 ]
 
 MIDDLEWARE = [
@@ -147,9 +144,3 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 django_heroku.settings(locals())
-
-cloudinary.config(
-  cloud_name = "superbblog",
-  api_key = os.environ.get('CLOUD_API_KEY'),
-  api_secret = os.environ.get('CLOUD_API_SECRET')
-)
