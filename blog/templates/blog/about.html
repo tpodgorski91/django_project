@@ -1,6 +1,17 @@
 {% extends "blog/base.html"%}
 {% block content %}
+    <style>
+        #content {
+            position: relative;
+        }
+        #content img {
+            position: absolute;
+            top: -100px;
+            right: 0px;
+        }
+    </style>
     <main>
+
         <h1>About page!</h1>
         <p></p>
         <p>
@@ -10,8 +21,9 @@
 
             <!--: 16px;style="vertical-align:right;margin:0px 200px">
         -->
+        </p>
 
-        <div> <img align="right" src="https://thumbs.dreamstime.com/z/mountain-river-flows-woods-rocks-selective-focus-136731029.jpg"
+        <div id="content"> <img src="https://thumbs.dreamstime.com/z/mountain-river-flows-woods-rocks-selective-focus-136731029.jpg"
             alt="River in the mountain" width="300" height="400" ></div>
         <h2>Lala</h2>
             <p>
