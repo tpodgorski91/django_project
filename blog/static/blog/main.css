@@ -1,13 +1,14 @@
 body {
-  background: #000000;
-  color: #fffefe;
+/*  background: #fafafa;*/
+  background: #444444;
+  color: #333333;
   margin-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-/*color: #444444;
+  /*color: #444444;
 */
-  color: #fffefe;
+    color: #d6d6d6;
 }
 
 ul {
@@ -24,6 +25,7 @@ ul {
 
 .site-header .navbar-nav .nav-link:hover {
   color: #ffffff;
+
 }
 
 .site-header .navbar-nav .nav-link.active {
@@ -32,6 +34,7 @@ ul {
 
 .content-section {
   background: #ffffff;
+  /*background: #444444;*/
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
@@ -61,12 +64,11 @@ a.article-title:hover {
   padding-bottom: 1px;
   margin-bottom: 4px;
   border-bottom: 1px solid #e3e3e3
-  /*border-bottom: 1px solid #ff0000 */
-
 }
 
 .article-metadata a:hover {
-  color: #333;
+  /*color: #333; */
+  color: #d6d6d6;
   text-decoration: none;
 }
 
