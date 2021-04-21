@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Wyceny akcji.",
+    "content": "Wyceny są najważniejsze przy kupowaniu akcji. Ogólnie im niższe wartości wskaźników tym wyższa stopa wzrostu w okresie czasu (np. 10 lat), na odwrót  w sytuacji poziomu dywidendy. Tutaj im wyższy poziom tym wyższa poziom zwrotu. ",
+    "user_id": 1
+  },
+  {
+    "title": "Wsk. cena/ zysk (Price/ Earnings lub P/E) ",
+    "content": "ile razy dana akcja jest droższa od wypracowanego zysku w ostatnich 12 miesiącach. Przy niedoskonałość tego wskaźnika, należy brać pod uwagę również inne.\nAtrakcyjność akcji:\nP/E<5; ŚWIETNA OKAZJA\n5<P/E<8; AKCJE TANIE\n8<P/E<16 AKCJE NEUTRALNIE WYCENIONE\n16<P/E<20; AKCJE DROGIE\nP/E>20; BAŃKA \n",
+    "user_id": 1
+  },
+  {
+    "title": "<b>CAPE</b> wskaźnik Schillera",
+    "content": "bierze pod uwagę skumulowane zyski z ostatnich 10 lat oraz aktualizuje je o inflację (unika dzięki temu wpływu chwilowych wzrostów zysków np. na skutek sprzedania przez firmę jakiegoś kompleksu budynków, ziemi itp.)",
+    "user_id": 1
+  }
+]
